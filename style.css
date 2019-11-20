@@ -1,0 +1,107 @@
+body {
+    background-color: #F8F4E3;
+    font-family: 'Encode Sans', sans-serif;
+    color: grey;
+    font-size: 1.1em;
+}
+
+.bg-green {
+    background-color: #00AA77 !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Encode Sans Semibold', sans-serif;
+    color: black;
+}
+
+nav h1 {
+    color: white;
+}
+
+.box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.box-container {
+    margin-top: 30px;
+}
+
+.fas {
+    color: #00AA77;
+    float: right;
+}
+.far {
+    color: #00AA77;
+}
+
+.fa-pen {
+
+}
+
+.box h2 {
+    display: inline-block;
+}
+
+button {
+    float: right;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.calendar-container input {
+    margin: 0 auto;
+    border: none;
+    outline: inherit;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+}
+
+.website {
+    background-color: #f2f2f2;
+    height: 50px;
+    /*width: 400px;*/
+    margin: 180px auto 0;
+}
+
+.website p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    color: black;
+    font-weight: lighter;
+}
+
+.description {
+    min-height: 400px;
+}
+
+.date-picker-x .dpx-weekend {
+    color: #00AA77;
+}
+.date-picker-x-input{
+    color: grey;
+}
+
+.btn-primary {
+    background-color: #00AA77;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #007253;
+}
+
+/*
+@media only screen and (max-width: 7000px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}*/

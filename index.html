@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jean-Baptiste Tamas-Leloup">
+
+    <title>Little Bill - Demo</title>
+
+    <!--    BOOTSTRAP    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <!--    FONTAWESOME    -->
+    <script src="https://kit.fontawesome.com/73775b4992.js" crossorigin="anonymous"></script>
+
+    <!--    DATEPICKERX    -->
+    <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.min.css">
+    <script src="DatePickerX-master/dist/js/DatePickerX.min.js"></script>
+
+    <!--    BOOTSTRAPFILEINPUT    -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.6/css/fileinput.min.css" media="all"
+          rel="stylesheet" type="text/css"/>
+
+    <!--    MAINCSS    -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- Nav -->
+<nav class="navbar navbar-expand bg-green static-top">
+    <div class="container">
+        <div class="navbar-collapse" id="navbarResponsive">
+            <h1>All App Users</h1>
+        </div>
+        <a class="navbar-brand" href="#">
+            <img src="logoLB.png" alt="Little Bill Logo">
+        </a>
+    </div>
+</nav>
+<!-- /Nav -->
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="box-container col-md-7">
+            <div class="box">
+                <h2 id="header-h2">Title</h2>
+                <!-- We pass #id of h2 and p in data-title and data-input
+                to the modal so we can retrieve/modify the content of h2 and p -->
+                <button type="button" class="" data-toggle="modal" data-target="#exampleModal" data-input="header-input"
+                        data-title="header-h2">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <p id="header-input">-50% on second Product</p>
+            </div>
+        </div>
+        <div class="box-container col-md-5">
+            <div class="box">
+                <h2>Calendar</h2>
+                <br>
+                <div class="calendar-container">
+                    <input type="text" name="demo1" placeholder="Pick A Date"><i class="far fa-calendar-alt"></i>
+                    -
+                    <input type="text" name="demo2" placeholder="Pick A Date"><i class="far fa-calendar-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box-container col-md-6">
+            <div class="box description">
+                <h2 id="description-h2">Description</h2>
+                <button type="button" class="" data-toggle="modal" data-target="#exampleModal"
+                        data-input="description-input"
+                        data-title="description-h2">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <p id="description-input">All seasonal jeans, T-shirts, Jacket are off 50% on the second article. <br>
+                    50% off on men sockets and men underwear.
+                </p>
+                <div class="website col-12">
+                    <p>https://littlebill.io</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-container col-md-6">
+            <div class="box bg-green">
+                <input id="input-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal used to update fields-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="current-title" class="col-form-label">Edit Title:</label>
+                            <input type="text" class="form-control" id="current-title">
+                        </div>
+                        <div class="form-group">
+                            <label for="current-input" class="col-form-label">Edit Header Description:</label>
+                            <textarea class="form-control" id="current-input"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="validate-text" data-dismiss="modal">Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+
+<!---------- Second Part ---------->
+
+<!-- Nav -->
+<nav class="navbar navbar-expand bg-green static-top mt-5">
+    <div class="container">
+        <div class="navbar-collapse" id="navbarResponsive2">
+            <h1>In-Store Customers</h1>
+        </div>
+        <a class="navbar-brand" href="#">
+            <img src="logoLB.png" alt="Little Bill Logo">
+        </a>
+    </div>
+</nav>
+<!-- /Nav -->
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="box-container col-md-7">
+            <div class="box">
+                <h2 id="header2-h2">Title</h2>
+                <button type="button" class="" data-toggle="modal" data-target="#exampleModal"
+                        data-input="header2-input"
+                        data-title="header2-h2">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <p id="header2-input">Buy one get one free</p>
+            </div>
+        </div>
+        <div class="box-container col-md-5">
+            <div class="box">
+                <h2>Calendar</h2>
+                <br>
+                <div class="calendar-container">
+                    <input type="text" name="demo21" placeholder="Pick A Date"><i class="far fa-calendar-alt"></i>
+                    -
+                    <input type="text" name="demo22" placeholder="Pick A Date"><i class="far fa-calendar-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box-container col-md-6">
+            <div class="box description">
+                <h2 id="description2-h2">Description</h2>
+                <button type="button" class="" data-toggle="modal" data-target="#exampleModal"
+                        data-input="description2-input"
+                        data-title="description2-h2">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <p id="description2-input">All seasonal jeans, T-shirts, Jacket are off 50% on the second article. <br>
+                    50% off on men sockets and men underwear.
+                </p>
+                <div class="website col-12">
+                    <p>https://littlebill.io</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-container col-md-6">
+            <div class="box bg-green">
+                <input id="input2-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- BOOTSTRAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<!-- BOOTSTRAPFILEINPUT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.6/js/fileinput.min.js"></script>
+    <!-- optionally if you need a theme like font awesome theme you can include it as mentioned below -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.6/themes/fa/theme.js"></script>
+    <!-- optionally if you need translation for your language then include  locale file as mentioned below -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.6/js/locales/(lang).js"></script>
+
+
+<script>
+    /***
+     * Fill the modal with current content
+     * if validate the content is replaced
+     * Thanks to data-* attribute when the modal is called we only need one modal for both parts
+     */
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        const button = $(event.relatedTarget); // Button that triggered the modal
+        const titleId = button.data('title'); // Extract info from data-* attributes
+        const inputId = button.data('input'); // Extract info from data-* attributes
+
+        const currentTitle = $("#" + titleId).html();
+        const currentInput = $("#" + inputId).html();
+
+        // Find <br> or </br>
+        const regex = /<br\s*[\/]?>/gi;
+
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        const modal = $(this);
+        modal.find('.modal-title').text('Edit your ' + inputId.split('-')[0].toLocaleUpperCase() + " Section");
+        modal.find('#current-title').val(currentTitle);
+        modal.find('#current-input').val(currentInput.replace(regex, "\n"));
+
+        $("#validate-text").click((e) => {
+            const newTitle = $("#current-title").val();
+            const newInput = $("#current-input").val();
+            $("#" + titleId).html(newTitle);
+            $("#" + inputId).html(newInput.replace(/\n/g, "<br />"));
+        })
+    });
+
+    /***
+     * Initializing 4 DatePickerX
+     */
+    window.addEventListener('DOMContentLoaded', function () {
+        const myDatepicker1 = document.querySelector('input[name="demo1"]');
+        const myDatepicker21 = document.querySelector('input[name="demo21"]');
+        const myDatepicker2 = document.querySelector('input[name="demo2"]');
+        const myDatepicker22 = document.querySelector('input[name="demo22"]');
+
+        myDatepicker1.DatePickerX.init({
+            // options here
+            maxDate: myDatepicker2
+        });
+        myDatepicker2.DatePickerX.init({
+            // options here
+            minDate: myDatepicker1
+        });
+
+        myDatepicker21.DatePickerX.init({
+            // options here
+            maxDate: myDatepicker22
+        });
+        myDatepicker22.DatePickerX.init({
+            // options here
+            minDate: myDatepicker21
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
